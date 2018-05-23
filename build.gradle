@@ -1,0 +1,17 @@
+apply plugin: 'com.android.application'
+
+android {
+    defaultConfig {
+    }
+    buildTypes {
+    }
+    externalNativeBuild {
+        cmake {
+            path 'CMakeLists.txt'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
